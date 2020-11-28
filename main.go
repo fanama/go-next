@@ -14,6 +14,8 @@ func main() {
 
 	app := fiber.New()
 
+	app.Static("/", "./build")
+
 	app.Listen(":" + port)
 
 }
